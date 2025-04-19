@@ -1,0 +1,1319 @@
+/* Base styles for desktop and larger devices */
+.App {
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  max-width: clamp(320px, 90vw, 800px, 100px, 1200px); /* Dynamically adjusts between 320px and 800px */
+  margin: auto;
+  color: #333;
+}
+
+.resume-header {
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  text-align: center;
+font-size: 42px;
+font-weight: 600;
+color: #333;
+margin-bottom: 40px;
+padding: 12px;
+text-transform: uppercase;
+letter-spacing: 1px;
+border-top: 1px solid #666;
+border-Bottom: 1px solid #666;
+margin: 10px 0px 10px 0px;
+}
+
+
+/* Responsive styles for tablets (up to 768px) */
+@media (max-width: 768px) {
+  .App {
+    padding: 1.5rem;
+  }
+
+  .resume-header {
+    font-size: 0.95rem;
+    padding-bottom: 0.8rem;
+    margin-bottom: 1.5rem;
+  }
+
+  section {
+    margin-bottom: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive styles for mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .resume-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .resume-header {
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+
+/* Responsive styles for mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .App {
+    padding: 1rem;
+    max-width: 95%;
+  }
+
+  .resume-header h1 {
+    font-size: 1.5rem;
+  }
+
+  .resume-header {
+    padding-bottom: 0.6rem;
+    margin-bottom: 1rem;
+  }
+
+  section {
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+}
+
+
+#Header
+
+.resume-header {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1rem;
+}
+
+.contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #0077b5;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.contact-icon {
+  width: 18px;
+  height: 18px;
+}
+
+.separator {
+  color: #666;
+  padding: 0 5px;
+}
+
+.location {
+  color: #333;
+}
+
+#About 
+
+/* Main Container */
+.about-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-in-out;
+  border: 1px solid #e0e0e0;
+}
+
+/* Title */
+.about-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  gap: 12px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Optional underline */
+.about-heading::after {
+  content: '';
+  width: 80px;
+  height: 3px;
+  background-color: #0073e6;
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 4px;
+}
+
+/* Description Text */
+.about-description {
+  font-size: 1.5rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  padding: 30px;
+  border-radius: 18px;
+  background-color: #f9f9f9;
+  font-weight: 590;
+
+}
+
+/* Hover effect for subtle interaction */
+.about-description:hover {
+transform: translateY(-8px);
+ box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 30px 20px;
+  }
+
+  .about-heading {
+    font-size: 1.8rem;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about-description {
+    font-size: 1rem;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-container {
+    padding: 25px 16px;
+  }
+
+  .about-heading {
+    font-size: 1.5rem;
+  }
+
+  .about-description {
+    font-size: 0.95rem;
+  }
+}
+
+
+#Exeperience
+
+/* General Styling */
+
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Experience Item Styling */
+.experience-item {
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.experience-item:hover {
+  transform: translateY(-8px);
+box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-title {
+  font-size: 1.8rem;
+  color: #333;
+  margin: 0;
+  text-transform: uppercase;
+  Font-Style: Bold;
+}
+
+.experience-location {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.experience-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  padding-left: 10px;
+}
+
+.company-name {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.company-link {
+  display: flex;
+  align-items: center;
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.company-link:hover {
+  text-decoration: underline;
+}
+
+.website-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.duration {
+  font-size: 1.1rem;
+  color: #777;
+}
+
+.website-link {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.website-link a {
+  color: #007BFF;
+  font-size: 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.website-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsibilities List Styling */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.5;
+  padding-left: 35px;
+
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  section {
+    padding: 15px;
+    margin: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .experience-item {
+    padding: 15px;
+  }
+
+  .experience-title {
+    font-size: 1.6rem;
+  }
+
+  .experience-location {
+    font-size: 1rem;
+  }
+
+  .company-name {
+    font-size: 1rem;
+  }
+
+  .duration {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 1rem;
+  }
+}
+
+#Education 
+
+
+/* Education Section Styling */
+.education-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Heading Style */
+.education-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Education Item Styling (Card) */
+.education-item {
+  margin-bottom: 25px;
+  padding: 25px;
+  background-color: #fafafa;
+  border-radius: 8px;
+  border-left: 4px solid #007BFF;
+  border-right: 4px solid #007BFF;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect to lift card */
+.education-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Degree Title Styling */
+.education-degree {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Institution and Location Inline Styling */
+.education-institution-location {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.education-institution {
+  font-size: 1.3rem;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+}
+
+.education-location {
+  font-size: 1.3rem;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Duration and Score Inline Styling */
+.education-duration-score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.3rem;
+  color: #444;
+}
+
+.education-duration {
+  font-weight: 500;
+  color: #333;
+}
+
+.education-score {
+  font-weight: 500;
+  color: #333;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .education-item {
+    padding: 15px;
+  }
+
+  .education-degree {
+    font-size: 1.6rem;
+  }
+
+  .education-institution-location,
+  .education-duration-score {
+    flex-direction: column; /* Stack items on small screens */
+    gap: 5px;
+  }
+
+  .education-institution,
+  .education-location,
+  .education-duration,
+  .education-score {
+    font-size: 1.1rem; /* Slightly smaller font size on small screens */
+  }
+   
+.education-institution a,
+.education-institution {
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.education-institution a:hover {
+  text-decoration: underline;
+}
+
+}
+
+
+#Skill 
+
+
+.skills-section {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.skill-badge {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 26px;
+  background-color: #007BFF;
+  color: #fff;
+  border-radius: 60px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skill-badge:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.skill-badge .icon {
+  font-size: 1.2rem;
+}
+
+
+#TechnicalTools
+
+.skills-section h2 {
+  margin-top: 50px;
+}
+
+.skill-badge .icon {
+  font-size: 1.3rem;
+}
+
+#Certificate 
+
+/* Container for Certifications Section */
+.certifications-section {
+  margin: 60px 0;
+  padding: 50px;
+  background-color: #f1f5f9; /* Light background for contrast */
+  border-radius: 15px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Heading Style */
+.certifications-section h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Certifications List: Flexbox for responsive design */
+.certifications-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+  animation: fadeInUp 1s ease-out; /* Add fade-in effect for the cards */
+}
+
+
+/* Certification Card Style */
+.certification-item {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 45%; /* Two-column layout for larger screens */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align items horizontally */
+  text-align: left;
+  cursor: pointer;
+  min-height: 100px; /* Reduced card height */
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  padding-left: 20px;
+}
+
+/* Hover Effect on Cards (Simplified) */
+.certification-item:hover {
+ 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow effect */
+  transform: translateY(-6px); /* Slight lift on hover */
+}
+
+/* Certification Icon Styling */
+.cert-icon {
+  font-size: 40px; /* Slightly smaller icon for simplicity */
+  color: #00bcd4; /* Bright accent color */
+  margin-right: 20px; /* Space between icon and title */
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect for Certification Icon */
+.certification-item:hover .cert-icon {
+  color: #00796b; /* Change icon color on hover */
+}
+
+/* Certification Name Styling */
+.certification-name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+/* Hover Effect for Certification Name */
+.certification-item:hover .certification-name {
+  color: #00796b; /* Change text color on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+  .certifications-list {
+    flex-direction: column; /* Stack cards in one column on smaller screens */
+    gap: 30px; /* Space out the stacked cards */
+  }
+
+  .certification-item {
+    max-width: 100%; /* Make each card take full width */
+    flex: 1 1 100%;
+  }
+
+  .certification-name {
+    font-size: 18px; /* Slightly smaller text on smaller screens */
+  }
+
+  .cert-icon {
+    font-size: 36px; /* Smaller icon size for mobile */
+  }
+}
+
+
+#Projects
+
+
+/* Styling for Projects section */
+.projects-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.projects-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the list of projects */
+.projects-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for project items */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style for each project item */
+.project-item {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the project icon */
+.project-icon {
+  font-size: 30px;
+  color: #0073e6; /* Icon color */
+  margin-right: 15px; /* Space between the icon and the title */
+}
+
+/* Styling for the project header container */
+.project-header {
+  display: flex;
+  justify-content: space-between; /* Space between title/icon and duration */
+  align-items: center; /* Align the icon and title inline */
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+/* Styling for the project title */
+.project-info {
+  display: flex;
+  align-items: center;
+  flex-grow: 1; /* Allow title to take up available space */
+  margin-right: 20px; /* Add spacing between the title and period */
+}
+
+/* Title style */
+.project-header h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin: 0; /* Remove margin to keep the spacing consistent */
+}
+
+/* Styling for the project duration on the right */
+.project-period {
+  font-size: 14px;
+  color: #555;
+  white-space: nowrap; /* Prevent wrapping */
+  text-align: right; /* Align the period to the right */
+}
+
+/* Styling for project description */
+.project-description {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px; /* Space between period and description */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .projects-list {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+
+  .project-item {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .project-header {
+    flex-direction: column; /* Stack the icon and text vertically on smaller screens */
+    align-items: flex-start;
+  }
+
+  .project-period {
+    margin-left: 0;
+    text-align: left; /* Align the period to the left when stacked */
+  }
+}
+
+
+
+#Publications
+
+/* Style for Publications section */
+.publications-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f4f4f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.publications-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the list of publications */
+.publications-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for publication items */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style for each publication item */
+.publication-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.publication-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the publication icon */
+.publication-icon {
+  font-size: 40px;
+  color: #0073e6;
+  margin-right: 20px;
+}
+
+/* Styling for publication details */
+.publication-details {
+  flex: 1;
+}
+
+.publication-details h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.publication-date {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.publication-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Styling for the publication link */
+.publication-link {
+  font-size: 16px;
+  color: #0073e6;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.publication-link:hover {
+  text-decoration: underline;
+}
+
+.publication-link svg {
+  margin-right: 5px;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .publications-list {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+}
+
+
+#Achievments
+
+/* Style for Achievements section */
+.achievements-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.achievements-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the list of achievements */
+.achievements-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for achievement items */
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Style for each achievement item */
+.achievement-item {
+  display: flex;
+  align-items: flex-start;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for the achievement icon */
+.achievement-icon {
+  font-size: 40px;
+  color: #28a745;
+  margin-right: 20px;
+}
+
+/* Styling for achievement details */
+.achievement-details {
+  flex: 1;
+}
+
+.achievement-details h3 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.achievement-date {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.achievement-description {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .achievements-list {
+    grid-template-columns: 1fr; /* One column on smaller screens */
+  }
+}
+
+
+#Interests
+
+/* Style for Interests section */
+.interests-section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.interests-section h2 {
+  text-align: center;
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style for the list of interests */
+.interests-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Auto grid with flexible column sizes */
+  gap: 20px;
+  margin-top: 20px;
+  
+}
+
+/* Style for each interest item */
+.interest-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.interest-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for interest icons */
+.interest-icon {
+  font-size: 40px;
+  color: #007bff; /* Blue color for the icons */
+  margin-bottom: 10px;
+}
+
+/* Styling for the name of the interest */
+.interest-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  text-transform: capitalize;
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+  .interests-list {
+    grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+  }
+}
+
+
+#Languages
+
+
+/* Container for Languages Section */
+.languages-section {
+  margin: 40px 0;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.languages-section h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Languages List: Flexbox for responsive design */
+.languages-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Language Card Style */
+.language-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 45%;
+  max-width: 45%; /* Ensures the cards do not stretch too wide */
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  cursor: pointer;
+  min-height: 100px;
+}
+
+/* Hover Effect on Cards */
+.language-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Language Name Styling */
+.language-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #333;
+  margin: 10px 0;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Language Proficiency Styling */
+.language-proficiency {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  font-style: italic;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Smaller Flag Icon Styling */
+.language-icon {
+  font-size: 24px; /* Reduced the size of the icon */
+  color: #0073e6; /* You can change the color to match your design */
+  margin-bottom: 20px;
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+  .languages-list {
+    flex-direction: column; /* Stack the cards on small screens */
+    gap: 20px; /* Space out the stacked cards */
+  }
+
+  .language-card {
+    max-width: 100%; /* Make each card take up full width */
+    flex: 1 1 100%;
+  }
+
+  .language-name {
+    font-size: 18px; /* Slightly smaller name font on small screens */
+  }
+
+  .language-proficiency {
+    font-size: 14px; /* Slightly smaller proficiency font */
+  }
+
+  .language-icon {
+    font-size: 20px; /* Smaller icon on mobile */
+  }
+}
+
+
+
+#index
+
+/* About section full-page background */
+.about-hero {
+  background-color: #0c1222;
+  background-size: cover;
+  background-position: center;
+  min-height: 150vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* Flex container */
+.about-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+/* Left and Right Columns: each takes 50% */
+.about-left,
+.about-right {
+  flex: 1;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+/* Left content styling */
+.about-left {
+  padding-left: 10%;
+}
+
+.greeting {
+  font-size: 2.5rem;
+  color: white;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+.intro {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  line-height: 1.8;
+  max-width: 600px;
+  margin-bottom: 1rem;
+}
+
+.linked-in-link {
+  color: #ffdd57;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.linked-in-link:hover {
+  text-decoration: underline;
+}
+
+.button-container {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  background-color: #007BFF;
+  Color: #fff;
+  padding: 20px 26px;
+  font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
+  margin-right: 1rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+  transition: all 0.3s ease;
+  border-radius: 60px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+/* Right content styling */
+.about-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-img {
+
+   width: 100%;
+  max-width: 720px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-card {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 20px;
+  }
+
+  .about-left,
+  .about-right {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .about-left {
+    padding-right: 0;
+  }
+
+  .hero-img {
+    width: 80%;
+    margin-top: 1rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    margin-bottom: 1rem;
+  }
+}
