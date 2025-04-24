@@ -11,6 +11,7 @@ import Publications from './Publications';
 import Achievements from './Achievements'; 
 import Interests from './Interests'; 
 import Languages from './Languages';  
+import Footer from './footer';
 
 
 const Resume = () => {
@@ -28,6 +29,7 @@ const Resume = () => {
       <Achievements />
       <Interests />
       <Languages />
+      <Footer />
     </div>
   );
 };

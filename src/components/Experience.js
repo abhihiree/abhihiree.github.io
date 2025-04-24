@@ -41,7 +41,7 @@ const Experience = () => (
     {/* Experience Item 1 */}
     <ExperienceItem
       title="Associate Security Engineer"
-      company="Eviden India Pvt. Ltd."
+      company="Atos India Pvt. Ltd."
       location="Navi Mumbai, MH"
       duration="2024 - Present"
       responsibilities={[
@@ -52,7 +52,7 @@ const Experience = () => (
         "Thoroughly documented pen testing activities, including evidence of successful exploits and comprehensive logs of all tests performed, providing full transparency and auditability.",
         "Demonstrated proficiency in identifying and mitigating application-level vulnerabilities such as XSS, SQL Injection, CSRF, authentication bypass, weak cryptography, and broken authentication, ensuring secure software deployment and client protection."
       ]}
-      websiteUrl="https://www.eviden.com"
+      websiteUrl="https://atos.net/en/"
       logoUrl="https://atos.net/content/assets/global-images/atos-logo-blue-2023.svg"
     />
 
