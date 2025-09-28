@@ -1,6 +1,6 @@
 import React from "react";
 import Resume from "./components/Resume";
-import "./App.css";
+import "./Updated_App.css";
 
 function App() {
   return (
